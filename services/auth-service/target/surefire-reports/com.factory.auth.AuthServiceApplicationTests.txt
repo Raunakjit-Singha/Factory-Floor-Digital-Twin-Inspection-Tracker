@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.factory.auth.AuthServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.92 s -- in com.factory.auth.AuthServiceApplicationTests

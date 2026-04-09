@@ -1,0 +1,6 @@
+com\factory\auth\entity\User.class
+com\factory\auth\controller\AuthController.class
+com\factory\auth\service\AuthService.class
+com\factory\auth\AuthServiceApplication.class
+com\factory\auth\config\SecurityConfig.class
+com\factory\auth\repository\UserRepository.class
