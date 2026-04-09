@@ -1,0 +1,5 @@
+com\factory\equipment\EquipmentApplication.class
+com\factory\equipment\service\EquipmentService.class
+com\factory\equipment\controller\EquipmentController.class
+com\factory\equipment\entity\Equipment.class
+com\factory\equipment\repository\EquipmentRepository.class

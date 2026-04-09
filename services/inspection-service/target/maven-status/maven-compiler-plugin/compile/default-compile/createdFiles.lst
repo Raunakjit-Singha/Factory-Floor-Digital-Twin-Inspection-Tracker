@@ -1,0 +1,5 @@
+com\factory\inspection\entity\Inspection.class
+com\factory\inspection\service\InspectionService.class
+com\factory\inspection\controller\InspectionController.class
+com\factory\inspection\repository\InspectionRepository.class
+com\factory\inspection\InspectionApplication.class
