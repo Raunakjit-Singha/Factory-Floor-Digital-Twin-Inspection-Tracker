@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Floor Digital Twin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Factory Floor Digital Twin</h1>
+
+<h2>Add Equipment</h2>
+<input id="name" placeholder="Equipment Name">
+<input id="location" placeholder="Location">
+<button onclick="addEquipment()">Add</button>
+
+<h2>Add Inspection</h2>
+<input id="equipmentId" placeholder="Equipment ID">
+<input id="inspector" placeholder="Inspector">
+<button onclick="addInspection()">Add</button>
+
+<h2>Equipment List</h2>
+<button onclick="loadEquipment()">Load</button>
+<ul id="equipmentList"></ul>
+
+<h2>Inspection List</h2>
+<button onclick="loadInspection()">Load</button>
+<ul id="inspectionList"></ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>

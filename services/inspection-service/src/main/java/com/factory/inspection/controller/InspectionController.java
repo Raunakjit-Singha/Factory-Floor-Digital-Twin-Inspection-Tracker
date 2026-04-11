@@ -1,28 +1,41 @@
 package com.factory.inspection.controller;
 
-import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
+
 import com.factory.inspection.entity.Inspection;
-import com.factory.inspection.service.InspectionService;
+import com.factory.inspection.repository.InspectionRepository;
 
 @RestController
 @RequestMapping("/inspection")
 public class InspectionController {
 
-    private final InspectionService service;
+    @Autowired
+    private InspectionRepository repository;
 
-    public InspectionController(InspectionService service) {
-        this.service = service;
-    }
+    @Autowired
+    private RestTemplate restTemplate;
 
     @GetMapping
     public List<Inspection> getAll() {
-        return service.getAll();
+        return repository.findAll();
     }
 
     @PostMapping
     public Inspection create(@RequestBody Inspection inspection) {
-        return service.save(inspection);
+
+        Inspection saved = repository.save(inspection);
+
+        // call notification service
+        restTemplate.postForObject(
+                "http://localhost:8085/notification",
+                "Inspection created for equipment " + inspection.getEquipmentId(),
+                String.class
+        );
+
+        return saved;
     }
 }

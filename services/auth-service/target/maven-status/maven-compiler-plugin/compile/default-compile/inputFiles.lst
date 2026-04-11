@@ -1,6 +1,8 @@
 C:\Users\rauna\floor-digital-twin\services\auth-service\src\main\java\com\factory\auth\AuthServiceApplication.java
+C:\Users\rauna\floor-digital-twin\services\auth-service\src\main\java\com\factory\auth\config\JwtFilter.java
 C:\Users\rauna\floor-digital-twin\services\auth-service\src\main\java\com\factory\auth\config\SecurityConfig.java
 C:\Users\rauna\floor-digital-twin\services\auth-service\src\main\java\com\factory\auth\controller\AuthController.java
 C:\Users\rauna\floor-digital-twin\services\auth-service\src\main\java\com\factory\auth\entity\User.java
 C:\Users\rauna\floor-digital-twin\services\auth-service\src\main\java\com\factory\auth\repository\UserRepository.java
 C:\Users\rauna\floor-digital-twin\services\auth-service\src\main\java\com\factory\auth\service\AuthService.java
+C:\Users\rauna\floor-digital-twin\services\auth-service\src\main\java\com\factory\auth\util\JwtUtil.java
